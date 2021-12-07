@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode> {/* Using Strict mode  */}
+    <App /> {/* telling that render App component(App.js)  and then take that content to root (next to next line says that)*/}
   </React.StrictMode>,
   document.getElementById('root')
 );
