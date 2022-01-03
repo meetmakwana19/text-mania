@@ -23,7 +23,12 @@ export default function Navbar(props) {
                     {/* d-flex = display-flex */}
                     {/* onClick needs only a function(eg. toggleMode) and not a function call therefore gave a arrow-func which has a function call */}
                     <div className="d-flex">
-                        <div className="bg-primary rounded mx-2" onClick={()=>{props.toggleMode("primary")}} style={{height:"30px", width:"30px", cursor:"pointer", borderRadius:"500px"}} ></div>
+                        <input type="color" className="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color"/>
+
+                        {/* <div className="bg-primary rounded mx-2" onClick={()=>{props.toggleMode("primary")}} style={{height:"30px", width:"30px", cursor:"pointer", borderRadius:"500px"}} ></div> */}
+
+                        <a href="#" className="btn btn-primary active rounded" data-bs-toggle="button" autocomplete="off" onClick={()=>{props.toggleMode("primary")}} style={{height:"30px", width:"30px", cursor:"pointer", borderRadius:"500px"}}></a>
+
                         <div className="bg-danger rounded mx-2" onClick={()=>{props.toggleMode('danger')}} style={{height:"30px", width:"30px", cursor:"pointer"}} ></div>
                         <div className="bg-success rounded mx-2" onClick={()=>{props.toggleMode('success')}} style={{height:"30px", width:"30px", cursor:"pointer"}} ></div>
                         <div className="bg-warning rounded mx-2" onClick={()=>{props.toggleMode('warning')}} style={{height:"30px", width:"30px", cursor:"pointer"}} ></div>
